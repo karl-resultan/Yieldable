@@ -1,0 +1,53 @@
+#container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #e8e9df;
+
+  strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+  }
+}
+
+#logo-container {
+  margin-top: 30%;
+}
+
+#proceed-button {
+  font-family: Staatliches, Calibri;
+  font-size: 16pt;
+
+  border-radius: 5px;
+  height: 40px;
+  width: 40%;
+  animation-name: proceed-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes proceed-animation {
+  0% {
+    background-color: transparent;
+    color: transparent;
+  }
+  50%{
+    background-color: #6B6B6B;
+    color: white;
+  }
+  100% {
+    background-color: transparent;
+    color: transparent;
+  }
+}
+
