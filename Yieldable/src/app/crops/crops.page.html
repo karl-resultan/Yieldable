@@ -1,8 +1,25 @@
 <div id="container">
-  <div id="header"></div>
+  <div id="header">
+    <div>
+      <img src="./assets/YieldableLogo.png" alt="">
+    </div>
+  </div>
+
   <div id="content">
-    <div (click)="changePage()">
-      Hello!
+    <div id="search-box">
+      <form method="post">
+        <input type="text" placeholder="Search" id="crop-search-bar">
+      </form>
+    </div>
+
+    <div id="crops-title">
+      <h1>SELECT A CROP</h1>
+    </div>
+
+    <div id="crops-container">
+      <div *ngFor="let crop of crops" (click)="navigateToCrop(crop.id)" class="crop">
+        <h1>{{ crop.name }}</h1>
+      </div>
     </div>
   </div>
 </div>

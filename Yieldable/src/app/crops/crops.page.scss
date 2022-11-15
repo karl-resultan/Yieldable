@@ -6,7 +6,67 @@
 }
 
 #header {
+  text-align: center;
   height: 10%;
   width: 100%;
+  padding-bottom: 3%;
   position: sticky;
+  background-color: white;
+
+  img {
+    height: 95%;
+    width: 20%;
+  }
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#search-box {
+  margin-top: 10%;
+
+  input {
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    color: #F0F0F0;
+    background-color: white;
+    width: 70%;
+
+    border: none;
+    border-radius: 15px;
+  }
+}
+
+#crops-title {
+  margin-top: 10%;
+
+  h1 {
+    font-family: Staatliches;
+    color: #707070;
+  }
+}
+
+#crops-container {
+  height: 70%;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.crop {
+  width: 160px;
+  height: 180px;
+  max-width: 160px;
+  max-height: 180px;
+  margin: 2%;
+  flex: 1 0 160px;
+
+  border-radius: 15px;
+  background-color: #89947D;
 }
