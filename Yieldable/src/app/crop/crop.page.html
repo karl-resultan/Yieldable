@@ -5,7 +5,94 @@
     </div>
   </div>
 
+  <div id="sub-container">
+    <div id="crop-info">
 
-  <div id="crop-info"></div>
-  <div id="crop-details"></div>
+      <!-- TITLE SECTION -->
+      <div id="crop-basic-info">
+        <div id="crop-basic-info-1">
+          <h1>{{ selectedCrop.name }}</h1>
+          <p>{{ selectedCrop.sci_name }}</p>
+        </div>
+
+        <div id="crop-basic-info-2">
+<!--          <h1>Day {{ selectedCrop.timeline }}</h1>-->
+        </div>
+      </div>
+
+      <!-- IMAGE SECTION -->
+      <div id="crop-stats-slides">
+        <ion-slides>
+          <ion-slide>
+            <div id="crop-additional-info">
+              <div id="crop-image">
+                <img src="{{ selectedCrop.image_url }}" alt="">
+              </div>
+
+              <div id="yield-details">
+                <h2>Estimated Yield:</h2>
+                <h1>{{ yield }} Cavans</h1>
+                <h4>per {{ 1 }} hectare(s)</h4>
+              </div>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div id="crop-prices">
+              <div class="price-section">
+                <img src="assets/nation.png" alt="">
+                <p>NATIONAL PRICE PER CAVAN:</p>
+                <h1>PHP {{ selectedCrop.crop_price_national }}</h1>
+              </div>
+
+              <div class="price-section">
+                <img src="assets/place.png" alt="">
+                <p>LOCAL PRICE PER CAVAN:</p>
+                <h1>PHP {{ selectedCrop.crop_price_local }}</h1>
+              </div>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div id="profit-estimates">
+              <img src="assets/profits.png" alt="">
+              <div id="profit-details">
+                <p>ESTIMATED PROFIT FROM FARMING OPERATION</p>
+                <h1>PHP {{ selectedCrop.crop_price_local * yield }}</h1>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </div>
+    </div>
+  </div>
+
+  <div id="crop-slides-container">
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <h1 class="slide-label">TYPE OF SOIL USED</h1>
+        <app-soil-slide [crop]="selectedCrop" (newYield)="onSoilChange($event)"></app-soil-slide>
+      </ion-slide>
+
+      <ion-slide>
+        <h1 class="slide-label">WEATHER MONITORING</h1>
+        <app-weather-slide></app-weather-slide>
+      </ion-slide>
+
+      <ion-slide>
+        <h1 class="slide-label">CULTIVATION PROCESS</h1>
+        <app-cultivation-slide></app-cultivation-slide>
+      </ion-slide>
+
+      <ion-slide>
+        <h1 class="slide-label">PESTS AND PLANT THREATS</h1>
+        <app-pest-slide [pests]="selectedCrop.pest"></app-pest-slide>
+      </ion-slide>
+
+<!--      <ion-slide>-->
+<!--        <h1 class="slide-label">FARM AND CROPPING DETAILS</h1>-->
+<!--        <app-value-slide></app-value-slide>-->
+<!--      </ion-slide>-->
+    </ion-slides>
+  </div>
 </div>

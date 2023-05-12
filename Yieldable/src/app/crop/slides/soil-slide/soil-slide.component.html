@@ -1,0 +1,30 @@
+<div class="crop-slide" id="soil-slide">
+  <form action="" method="post">
+    <div class="soil-type">
+      <div class="soil-image" id="clay-soil"></div>
+      <div class="soil-range-slider">
+        <label>CLAY ({{ clay }}%)</label>
+        <input value="{{ crop.optimal_clay }}" type="range"
+               id="soil-1" min="0" max="{{ max1 }}" (change)="updateValues('clay')" name="clay">
+      </div>
+    </div>
+
+    <div class="soil-type">
+      <div class="soil-image" id="silt-soil"></div>
+      <div class="soil-range-slider">
+        <label>SILT ({{ silt }}%)</label>
+        <input value="{{ crop.optimal_silt }}" type="range"
+               id="soil-2" min="0" max="{{ max2 }}" (change)="updateValues('silt')" name="silt">
+      </div>
+    </div>
+
+    <div class="soil-type">
+      <div class="soil-image" id="sand-soil"></div>
+      <div class="soil-range-slider">
+        <label>SAND ({{ sand }}%)</label>
+        <input value="{{ crop.optimal_sand }}" type="range"
+               id="soil-3" min="0" max="{{ max3 }}" (change)="updateValues('sand')" name="sand">
+      </div>
+    </div>
+  </form>
+</div>

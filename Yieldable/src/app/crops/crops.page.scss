@@ -32,7 +32,7 @@
     padding-top: 3%;
     padding-left: 5%;
     padding-bottom: 3%;
-    color: #F0F0F0;
+    color: #535656;
     background-color: white;
     width: 70%;
 
@@ -60,13 +60,19 @@
 }
 
 .crop {
-  width: 160px;
-  height: 180px;
-  max-width: 160px;
-  max-height: 180px;
-  margin: 2%;
+  width: 80%;
+  min-width: 80%;
+  height: 300px;
+  max-height: 300px;
+  margin: 5%;
   flex: 1 0 160px;
 
   border-radius: 15px;
   background-color: #89947D;
+
+  img {
+    height: 70%;
+    width: 100%;
+    border-radius: 15px;
+  }
 }

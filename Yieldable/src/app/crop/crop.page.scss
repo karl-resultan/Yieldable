@@ -1,3 +1,7 @@
+$main: #89947D;
+$main-font: Staatliches;
+$price: #89947D;
+
 #container {
   height: 100%;
   width: 100%;
@@ -18,3 +22,167 @@
     width: 20%;
   }
 }
+
+#sub-container {
+  height: 45%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#crop-info {
+  height: 30%;
+  width: 100%;
+}
+
+#crop-basic-info {
+  width: 100%;
+  font-family: $main-font;
+  color: $main;
+  margin-bottom: 10%;
+
+  h1 {
+    font-size: 24pt;
+  }
+}
+
+#crop-basic-info-1 {
+  height: 30%;
+  width: 60%;
+  float: left;
+  text-align: left;
+}
+
+#crop-basic-info-2 {
+  height: 30%;
+  width: 40%;
+  float: right;
+  text-align: right;
+}
+
+#current-day {
+  margin-left: 25%;
+}
+
+#crop-stats-slides {
+  margin-top: 40%;
+  height: 70%;
+  width: 100%;
+  position: absolute;
+}
+
+#crop-additional-info {
+  font-family: $main-font;
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  width: 100%;
+}
+
+#crop-prices {
+  padding: 1%;
+  height: 70%;
+  width: 100%;
+  font-family: $main-font;
+  color: #89947D;
+
+  img {
+    height: 30%;
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 30pt;
+    color: #FDBD3E;
+  }
+
+  p {
+    font-size: 12pt;
+  }
+
+  .price-section {
+    width: 40%;
+    float: left;
+    margin: 3%;
+  }
+}
+
+#crop-image {
+  height: 150px;
+  width: 45%;
+  max-width: 50%;
+  background-color: white;
+  border-radius: 15px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    border-radius: 15px;
+  }
+}
+
+#yield-details {
+  height: 100%;
+  width: 45%;
+  max-width: 50%;
+  margin-left: 8%;
+  margin-top: -3%;
+  text-align: left;
+
+  h1, h2, h4 {
+    color: $main;
+  }
+
+  h1 {
+    font-size: 28pt;
+  }
+}
+
+#profit-estimates {
+  img {
+    float: left;
+    height: 20%;
+    width: 20%;
+    margin: 5%;
+    margin-top: 10%;
+    margin-left: 8%;
+  }
+}
+
+#profit-details {
+  width: 60%;
+  padding: 3%;
+  color: $main;
+  float: left;
+  font-family: $main-font;
+
+  p {
+    font-size: 15pt;
+  }
+
+  h1 {
+    color: #FDBD3E;
+    font-size: 30pt;
+  }
+}
+
+
+#crop-slides-container {
+  display: block;
+  font-family: $main-font;
+  height: 55%;
+  width: 100%;
+  padding-bottom: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: $main;
+}
+
+.crop-slide {
+  padding-top: 10%;
+  height: 100%;
+  width: 100%;
+}
+
+

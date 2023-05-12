@@ -1,0 +1,68 @@
+#soil-slide {
+  height: 80%;
+  width: 100%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+#soil-slide-header {
+  text-align: center;
+}
+
+.soil-type {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.soil-image {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin-right: 5%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#clay-soil {
+  background-image: url("/assets/soil_types/clay.png");
+  background-size: contain;
+}
+
+#silt-soil {
+  background-image: url("/assets/soil_types/silt.png");
+  background-size: contain;
+}
+
+#sand-soil {
+  background-image: url("/assets/soil_types/sand.png");
+  background-size: contain;
+}
+
+#soil-1 {
+  accent-color: #E7870A;
+}
+
+#soil-2 {
+  accent-color: #E1AE6C;
+}
+
+#soil-3 {
+  accent-color: #FEDBAF;
+}
+
+.soil-range-slider {
+  float: left;
+  width: 70%;
+
+  label {
+    font-size: 20pt;
+    display: block;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+  }
+}

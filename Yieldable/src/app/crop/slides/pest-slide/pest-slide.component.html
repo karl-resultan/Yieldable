@@ -1,0 +1,17 @@
+<div id="pest-info-container">
+  <ion-content [color]="'white'">
+    <div *ngFor="let pest of pests" class="pest-info">
+      <div id="pest-img">
+        <img src="{{ getPestImage(pest.name) }}">
+      </div>
+      <h1 class="main-info">{{ pest.name }}</h1>
+      <p class="main-info">{{ pest.sci_name }}</p>
+
+      <h3>Description</h3>
+      <p>{{ pest.description }}</p>
+
+      <h3>Measures</h3>
+      <p>{{ pest.measures }}</p>
+    </div>
+  </ion-content>
+</div>

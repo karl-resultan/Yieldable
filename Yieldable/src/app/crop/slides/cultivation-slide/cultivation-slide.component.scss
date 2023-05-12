@@ -1,0 +1,16 @@
+.cultivation-container {
+  height: 70%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#cultivation-process {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  p {
+    font-family: Bahnschrift;
+    line-height: 5px;
+  }
+}
