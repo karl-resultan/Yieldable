@@ -28,9 +28,8 @@ ion-content {
 }
 
 .weather-icon {
-  height: 30%;
-  width: 30%;
-  padding: 1%;
+  height: 10vh;
+  width: 10vh;
   float: left;
 
   img {
@@ -42,5 +41,20 @@ ion-content {
 .weather-update-details {
   text-align: left;
   float: left;
+  height: 55%;
   width: 70%;
+}
+
+.weather-gen-info {
+  height: 40%;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.weather-description {
+  p {
+    margin-left: 8%;
+    margin-top: -5%;
+  }
 }

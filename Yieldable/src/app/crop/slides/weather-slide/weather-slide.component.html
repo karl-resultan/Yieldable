@@ -7,42 +7,47 @@
       </div>
 
       <div class="weather-update-details">
-        <div class="weather-icon">
-          <ng-template [ngIf]="weather.wmo == 'Clear Skies'">
-            <img src="assets\icon\day.svg" alt="">
-          </ng-template>
+        <div class="weather-gen-info">
+          <div class="weather-icon">
+            <ng-template [ngIf]="weather.wmo == 'Clear Skies'">
+              <img src="assets\icon\day.svg" alt="">
+            </ng-template>
 
-          <ng-template [ngIf]="weather.wmo == 'Minimal Clouds'">
-            <img src="assets\icon\cloudy-day-1.svg" alt="">
-          </ng-template>
+            <ng-template [ngIf]="weather.wmo == 'Minimal Clouds'">
+              <img src="assets\icon\cloudy-day-1.svg" alt="">
+            </ng-template>
 
-          <ng-template [ngIf]="weather.wmo == 'Slight Intermittent Drizzle'">
-            <img src="assets\icon\rainy-2.svg" alt="">
-          </ng-template>
+            <ng-template [ngIf]="weather.wmo == 'Slight Intermittent Drizzle'">
+              <img src="assets\icon\rainy-2.svg" alt="">
+            </ng-template>
 
-          <ng-template [ngIf]="weather.wmo == 'Continuous Moderate Drizzle'">
-            <img src="assets\icon\rainy-1.svg" alt="">
-          </ng-template>
+            <ng-template [ngIf]="weather.wmo == 'Continuous Moderate Drizzle'">
+              <img src="assets\icon\rainy-1.svg" alt="">
+            </ng-template>
 
-          <ng-template [ngIf]="weather.wmo == 'Continuous Heavy Drizzle'">
-            <img src="assets\icon\rainy-3.svg" alt="">
-          </ng-template>
+            <ng-template [ngIf]="weather.wmo == 'Continuous Heavy Drizzle'">
+              <img src="assets\icon\rainy-3.svg" alt="">
+            </ng-template>
 
-          <ng-template [ngIf]="weather.wmo == 'Slight Intermittent Rain'">
-            <img src="assets\icon\rainy-4.svg" alt="">
-          </ng-template>
+            <ng-template [ngIf]="weather.wmo == 'Slight Intermittent Rain'">
+              <img src="assets\icon\rainy-4.svg" alt="">
+            </ng-template>
 
-          <ng-template [ngIf]="weather.wmo == 'Moderate Continuous Rain'">
-            <img src="assets\icon\rainy-5.svg" alt="">
-          </ng-template>
+            <ng-template [ngIf]="weather.wmo == 'Moderate Continuous Rain'">
+              <img src="assets\icon\rainy-5.svg" alt="">
+            </ng-template>
 
-          <ng-template [ngIf]="weather.wmo == 'Heavy Continuous Rain'">
-            <img src="assets\icon\rainy-6.svg" alt="">
-          </ng-template>
+            <ng-template [ngIf]="weather.wmo == 'Heavy Continuous Rain'">
+              <img src="assets\icon\rainy-6.svg" alt="">
+            </ng-template>
+          </div>
+
+          <div class="temp">
+            <h1>{{ weather.temperature_2m_mean }}°C</h1>
+          </div>
         </div>
 
-        <div class="weather-info">
-          <h1>{{ weather.temperature_2m_mean }}°C</h1>
+        <div class="weather-description">
           <p>{{ weather.wmo }}</p>
         </div>
       </div>

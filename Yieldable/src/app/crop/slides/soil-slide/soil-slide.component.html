@@ -1,30 +1,53 @@
 <div class="crop-slide" id="soil-slide">
-  <form action="" method="post">
-    <div class="soil-type">
-      <div class="soil-image" id="clay-soil"></div>
-      <div class="soil-range-slider">
-        <label>CLAY ({{ clay }}%)</label>
-        <input value="{{ crop.optimal_clay }}" type="range"
-               id="soil-1" min="0" max="{{ max1 }}" (change)="updateValues('clay')" name="clay">
-      </div>
+  <div class="soil-type">
+    <div class="soil-image" id="clay-soil"></div>
+    <div class="soil-range-slider">
+      <label>CLAY ({{ clay }}%)</label>
+      <input value="{{ crop.optimal_clay }}" type="range"
+             id="soil-1" min="0" max="{{ max1 }}" (change)="updateValues()" name="clay">
     </div>
+  </div>
 
-    <div class="soil-type">
-      <div class="soil-image" id="silt-soil"></div>
-      <div class="soil-range-slider">
-        <label>SILT ({{ silt }}%)</label>
-        <input value="{{ crop.optimal_silt }}" type="range"
-               id="soil-2" min="0" max="{{ max2 }}" (change)="updateValues('silt')" name="silt">
-      </div>
+  <div class="soil-type">
+    <div class="soil-image" id="silt-soil"></div>
+    <div class="soil-range-slider">
+      <label>SILT ({{ silt }}%)</label>
+      <input value="{{ crop.optimal_silt }}" type="range"
+             id="soil-2" min="0" max="{{ max2 }}" (change)="updateValues()" name="silt">
     </div>
+  </div>
 
-    <div class="soil-type">
-      <div class="soil-image" id="sand-soil"></div>
-      <div class="soil-range-slider">
-        <label>SAND ({{ sand }}%)</label>
-        <input value="{{ crop.optimal_sand }}" type="range"
-               id="soil-3" min="0" max="{{ max3 }}" (change)="updateValues('sand')" name="sand">
-      </div>
+  <div class="soil-type">
+    <div class="soil-image" id="sand-soil"></div>
+    <div class="soil-range-slider">
+      <label>SAND ({{ sand }}%)</label>
+      <input value="{{ crop.optimal_sand }}" type="range"
+             id="soil-3" min="0" max="{{ max3 }}" (change)="updateValues()" name="sand">
     </div>
-  </form>
+  </div>
+
+  <div class="soil-analysis-data">
+    <h1>Macronutrients</h1>
+    <h4>Nitrogen</h4>
+    <input id="nitrogen" min=0 max=10 (change)="updateValues()" type="number" placeholder="Enter Organic Matter %">
+
+    <h4>Potassium</h4>
+    <input id="potassium" min=0 max=300 (change)="updateValues()" type="number" placeholder="Enter Potassium value (ppm)">
+
+    <h4>Phosphorus</h4>
+    <input id="phosphorus" min=0 max=45 (change)="updateValues()" type="number" placeholder="Enter Phosphorus value (ppm)">
+
+    <h1>Micronutrients</h1>
+    <h4>Zinc</h4>
+    <input id="zinc" type="number" placeholder="Enter Zinc value (ppm)">
+
+    <h4>Copper</h4>
+    <input id="copper" type="number" placeholder="Enter Copper value (ppm)">
+
+    <h4>Manganese</h4>
+    <input id="manganese" type="number" placeholder="Enter Manganese value (ppm)">
+
+    <h4>Iron</h4>
+    <input id="iron" type="number" placeholder="Enter Iron value (ppm)">
+  </div>
 </div>
