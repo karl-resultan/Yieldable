@@ -13,6 +13,8 @@ import {CultivationSlideComponent} from "./slides/cultivation-slide/cultivation-
 import {ValueSlideComponent} from "./slides/value-slide/value-slide.component";
 import { SwiperModule } from "swiper/angular";
 import {PestSlideComponent} from "./slides/pest-slide/pest-slide.component";
+import {WeatherGraphComponent} from "./slides/weather-graph/weather-graph.component";
+import {TutorialSlideComponent} from "./slides/tutorial-slide/tutorial-slide.component";
 
 @NgModule({
   imports: [
@@ -22,6 +24,6 @@ import {PestSlideComponent} from "./slides/pest-slide/pest-slide.component";
     CropPageRoutingModule,
     SwiperModule
   ],
-  declarations: [CropPage, SoilSlideComponent, WeatherSlideComponent, CultivationSlideComponent, ValueSlideComponent, PestSlideComponent]
+    declarations: [CropPage, SoilSlideComponent, WeatherSlideComponent, CultivationSlideComponent, ValueSlideComponent, PestSlideComponent, WeatherGraphComponent, TutorialSlideComponent]
 })
 export class CropPageModule {}

@@ -47,7 +47,9 @@ export class SoilSlideComponent implements OnInit {
     let phosphorus = parseInt((<HTMLInputElement>document.getElementById('phosphorus')).value);
 
     // nutrient deficiency yield reduction calculation
-    let yield_per_macronutrient = .3333 * this.crop.crop_yield;
+    let yield_per_macronutrient = .39996 * this.crop.crop_yield;
+    let yield_per_micronutrient = .095235 * this.crop.crop_yield;
+
     let reduction_per_nitrogen_deficiency = yield_per_macronutrient / 4.4;
     let reduction_per_potassium_deficiency = yield_per_macronutrient / 249.9;
     let reduction_per_phosphorus_deficiency = yield_per_macronutrient / 29.9;

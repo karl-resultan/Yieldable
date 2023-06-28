@@ -70,12 +70,22 @@
   <div id="crop-slides-container">
     <ion-slides pager="true" [options]="slideOpts">
       <ion-slide>
+        <h1 class="slide-label">TUTORIAL</h1>
+        <app-tutorial-slide></app-tutorial-slide>
+      </ion-slide>
+
+      <ion-slide>
         <h1 class="slide-label">TYPE OF SOIL USED</h1>
         <app-soil-slide [crop]="selectedCrop" (newYield)="onSoilChange($event)"></app-soil-slide>
       </ion-slide>
 
       <ion-slide>
         <h1 class="slide-label">WEATHER MONITORING</h1>
+        <app-weather-graph></app-weather-graph>
+      </ion-slide>
+
+      <ion-slide>
+        <h1 class="slide-label">WEATHER REPORT</h1>
         <app-weather-slide></app-weather-slide>
       </ion-slide>
 

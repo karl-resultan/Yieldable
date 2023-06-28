@@ -76,3 +76,38 @@
     border-radius: 15px;
   }
 }
+
+@media (max-width: 430px) and (min-width: 400px){
+  #header {
+    img {
+      height: 35%;
+      width: 15%;
+    }
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px){
+  #header {
+    img {
+      height: 40%;
+      width: 10%;
+    }
+  }
+
+  .crop {
+    width: 10%;
+    min-width: 10%;
+
+    border-radius: 15px;
+    background-color: #89947D;
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 1000px){
+  #header {
+    img {
+      height: 40%;
+      width: 10%;
+    }
+  }
+}

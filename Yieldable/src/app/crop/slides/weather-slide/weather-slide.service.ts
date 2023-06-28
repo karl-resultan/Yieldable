@@ -8,6 +8,7 @@ import {WeatherModel} from "./weather.model";
 export class WeatherSlideService {
   weather_updates: WeatherModel[] = [];
   url: string = 'http://127.0.0.1:8000/daily_weather';
+  most_frequent = '';
 
   constructor(private http: HttpClient) { }
 

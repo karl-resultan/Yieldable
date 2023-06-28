@@ -28,26 +28,47 @@
 
   <div class="soil-analysis-data">
     <h1>Macronutrients</h1>
-    <h4>Nitrogen</h4>
-    <input id="nitrogen" min=0 max=10 (change)="updateValues()" type="number" placeholder="Enter Organic Matter %">
+    <div class="nutrient-container">
+      <div class="nutrient-image">
+        <img src="assets\elements\NITROGEN.png" alt="">
+      </div>
+      <div class="nutrient-form">
+        <h4>Nitrogen</h4>
+        <input id="nitrogen" min=0 max=10 (change)="updateValues()" type="number" placeholder="Enter Organic Matter %">
+      </div>
+    </div>
 
-    <h4>Potassium</h4>
-    <input id="potassium" min=0 max=300 (change)="updateValues()" type="number" placeholder="Enter Potassium value (ppm)">
+    <div class="nutrient-container">
+      <div class="nutrient-image">
+        <img src="assets\elements\POTASSIUM.png" alt="">
+      </div>
+      <div class="nutrient-form">
+        <h4>Potassium</h4>
+        <input id="potassium" min=0 max=300 (change)="updateValues()" type="number" placeholder="Enter Potassium value (ppm)">
+      </div>
+    </div>
 
-    <h4>Phosphorus</h4>
-    <input id="phosphorus" min=0 max=45 (change)="updateValues()" type="number" placeholder="Enter Phosphorus value (ppm)">
+    <div class="nutrient-container">
+      <div class="nutrient-image">
+        <img src="assets\elements\PHOSPHORUS.png" alt="">
+      </div>
+      <div class="nutrient-form">
+        <h4>Phosphorus</h4>
+        <input id="phosphorus" min=0 max=40 (change)="updateValues()" type="number" placeholder="Enter Phosphorus value (ppm)">
+      </div>
+    </div>
 
-    <h1>Micronutrients</h1>
-    <h4>Zinc</h4>
-    <input id="zinc" type="number" placeholder="Enter Zinc value (ppm)">
+<!--    <h1>Micronutrients</h1>-->
+<!--    <h4>Zinc</h4>-->
+<!--    <input id="zinc" type="number" placeholder="Enter Zinc value (ppm)">-->
 
-    <h4>Copper</h4>
-    <input id="copper" type="number" placeholder="Enter Copper value (ppm)">
+<!--    <h4>Copper</h4>-->
+<!--    <input id="copper" type="number" placeholder="Enter Copper value (ppm)">-->
 
-    <h4>Manganese</h4>
-    <input id="manganese" type="number" placeholder="Enter Manganese value (ppm)">
+<!--    <h4>Manganese</h4>-->
+<!--    <input id="manganese" type="number" placeholder="Enter Manganese value (ppm)">-->
 
-    <h4>Iron</h4>
-    <input id="iron" type="number" placeholder="Enter Iron value (ppm)">
+<!--    <h4>Iron</h4>-->
+<!--    <input id="iron" type="number" placeholder="Enter Iron value (ppm)">-->
   </div>
 </div>

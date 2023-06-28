@@ -124,7 +124,7 @@ $price: #89947D;
 
 #yield-details {
   height: 100%;
-  width: 45%;
+  width: 43%;
   max-width: 50%;
   margin-left: 8%;
   margin-top: -3%;
@@ -135,7 +135,7 @@ $price: #89947D;
   }
 
   h1 {
-    font-size: 28pt;
+    font-size: 25pt;
   }
 }
 
@@ -186,3 +186,293 @@ $price: #89947D;
 }
 
 
+@media (max-width: 320px){
+  #yield-details {
+    h2 {
+      font-size: 15pt;
+    }
+
+    h1 {
+      font-size: 18pt;
+    }
+
+    h4 {
+      font-size: 14pt;
+    }
+  }
+
+  #crop-prices {
+    p {
+      font-size: 10pt;
+    }
+
+    h1 {
+      font-size: 16pt;
+    }
+  }
+
+  #profit-details {
+    p {
+      font-size: 13pt;
+    }
+
+    h1 {
+      font-size: 16pt;
+    }
+  }
+}
+
+@media (max-width: 380px) and (min-width: 330px){
+  #crop-additional-info {
+    margin-top: 5%;
+  }
+
+  #crop-basic-info {
+    margin-bottom: 10%;
+  }
+
+  #crop-stats-slides {
+    margin-top: 30%;
+  }
+
+  #crop-image {
+    height: 125px;
+    width: 35%;
+  }
+
+  #yield-details {
+    h2 {
+      font-size: 15pt;
+    }
+
+    h1 {
+      font-size: 18pt;
+    }
+
+    h4 {
+      font-size: 14pt;
+    }
+  }
+
+  #crop-prices {
+    p {
+      font-size: 10pt;
+    }
+
+    h1 {
+      font-size: 16pt;
+    }
+  }
+
+  #profit-details {
+    p {
+      font-size: 13pt;
+    }
+
+    h1 {
+      font-size: 16pt;
+    }
+  }
+}
+
+@media (max-width: 430px) and (min-width: 400px){
+  #header {
+    img {
+      height: 35%;
+      width: 15%;
+    }
+  }
+
+  #crop-additional-info {
+    margin-top: 2%;
+  }
+
+  #crop-basic-info {
+    margin-bottom: 10%;
+  }
+
+  #crop-stats-slides {
+    margin-top: 30%;
+  }
+
+  #crop-image {
+    height: 125px;
+    width: 35%;
+  }
+
+  #yield-details {
+    h2 {
+      font-size: 15pt;
+    }
+
+    h1 {
+      font-size: 18pt;
+    }
+
+    h4 {
+      font-size: 14pt;
+    }
+  }
+
+  #crop-prices {
+    p {
+      font-size: 12pt;
+    }
+
+    h1 {
+      font-size: 17pt;
+    }
+  }
+
+  #profit-details {
+    p {
+      font-size: 14pt;
+    }
+
+    h1 {
+      font-size: 17pt;
+    }
+  }
+}
+
+@media (max-width: 780px) and (min-width: 500px){
+  #header {
+    padding-bottom: 5%;
+
+    img {
+      height: 45%;
+      width: 10%;
+    }
+  }
+
+  #crop-additional-info {
+    margin-top: 5%;
+  }
+
+  #crop-basic-info {
+    margin-bottom: 10%;
+  }
+
+  #crop-stats-slides {
+    margin-top: 10%;
+  }
+
+  #crop-image {
+    height: 150px;
+    width: 35%;
+  }
+
+  #yield-details {
+    h2 {
+      font-size: 17pt;
+    }
+
+    h1 {
+      font-size: 20pt;
+    }
+
+    h4 {
+      font-size: 16pt;
+    }
+  }
+
+  #crop-prices {
+    p {
+      font-size: 12pt;
+    }
+
+    h1 {
+      font-size: 17pt;
+    }
+  }
+
+  #profit-details {
+    margin-top: 3%;
+
+    p {
+      font-size: 16pt;
+    }
+
+    h1 {
+      font-size: 19pt;
+    }
+  }
+
+  #profit-estimates {
+    img {
+      height: 10%;
+      width: 10%;
+    }
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 1000px){
+  #header {
+    padding-bottom: 5%;
+
+    img {
+      height: 45%;
+      width: 10%;
+    }
+  }
+
+  #crop-additional-info {
+    margin-top: 5%;
+  }
+
+  #crop-basic-info {
+    margin-bottom: 10%;
+  }
+
+  #crop-stats-slides {
+    margin-top: 10%;
+  }
+
+  #crop-image {
+    height: 150px;
+    width: 35%;
+  }
+
+  #yield-details {
+    h2 {
+      font-size: 25pt;
+    }
+
+    h1 {
+      font-size: 30pt;
+    }
+
+    h4 {
+      font-size: 20pt;
+    }
+  }
+
+  #crop-prices {
+    p {
+      font-size: 12pt;
+    }
+
+    h1 {
+      font-size: 17pt;
+    }
+  }
+
+  #profit-details {
+    margin-top: 3%;
+
+    p {
+      font-size: 25pt;
+    }
+
+    h1 {
+      font-size: 30pt;
+    }
+  }
+
+  #profit-estimates {
+    img {
+      height: 10%;
+      width: 10%;
+    }
+  }
+}
